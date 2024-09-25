@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #222222;
+}
+
+.deskripsi{
+    margin-top: 30px;
+    padding: 3px 0;
+    border: 1px solid #c0c0c0;
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
+    margin: 120px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 380px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+}
+
+.card header{
+    background: linear-gradient(#ffffff, #c0c0c0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+
+.card header h1{
+    text-shadow: 3px -3px 0px #ffffff;
+}
+
+.card form{
+    padding: 5px 20px;
+}
+
+.card form .input-group{
+    margin-top: 15px;
+}
+
+.card form .input-group input{
+    width: 70%;
+    padding: 0 15px;
+    background-color: #222222;
+    height: 40px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.card form .input-group input::placeholder{
+    text-align: center;
+    color: #bababa;
+}
+
+.card form .btn{
+    margin-top: 15px;
+    background-color: #ff0000;
+    padding: 8px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card form .btn:active{
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+   .card{
+    transform: scale(0.8);
+   }
+}
